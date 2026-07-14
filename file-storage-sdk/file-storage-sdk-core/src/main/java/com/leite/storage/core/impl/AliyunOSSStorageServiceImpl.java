@@ -87,11 +87,6 @@ public class AliyunOSSStorageServiceImpl implements FileStorageService {
                 .build();
     }
 
-    @Override
-    public FileInfo upload(FileUploadRequest.UploadRequestBuilder builder) {
-        return upload(builder.build());
-    }
-
     private void uploadSimple(String fileKey, FileUploadRequest request) {
         try {
             PutObjectResult result = ossClient.putObject(
