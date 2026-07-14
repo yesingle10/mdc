@@ -1,0 +1,3 @@
+spring.boot.enableautoconfiguration=true
+
+com.leite.storage.autoconfigure.FileStorageAutoConfiguration
