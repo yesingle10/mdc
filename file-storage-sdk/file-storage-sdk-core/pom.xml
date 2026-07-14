@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.leite</groupId>
+        <artifactId>file-storage-sdk</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>file-storage-sdk-core</artifactId>
+    <packaging>jar</packaging>
+    <name>File Storage SDK Core</name>
+    <description>文件存储服务核心实现</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.leite</groupId>
+            <artifactId>file-storage-sdk-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.aliyun.oss</groupId>
+            <artifactId>aliyun-sdk-oss</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <!-- Apache Commons IO for utility methods -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.15.1</version>
+        </dependency>
+        <!-- Apache Commons Codec for MD5 -->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.17.0</version>
+        </dependency>
+    </dependencies>
+</project>
