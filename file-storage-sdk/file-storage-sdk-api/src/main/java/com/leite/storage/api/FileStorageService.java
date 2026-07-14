@@ -17,14 +17,6 @@ public interface FileStorageService {
     FileInfo upload(FileUploadRequest request);
 
     /**
-     * 上传文件（简化版，自动从 TenantContext 获取 tenantId）
-     *
-     * @param request 上传请求
-     * @return 文件信息
-     */
-    FileInfo upload(FileUploadRequest.UploadRequestBuilder builder);
-
-    /**
      * 下载文件（返回字节数组）
      *
      * @param fileKey 文件标识
